@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleman Quattlebaum | QB Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .programs, .coaching {
+            margin-bottom: 40px;
+        }
+        .program-list, .coaching-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .program-list li, .coaching-list li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .application-form {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .application-form input, .application-form textarea, .application-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .application-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Coleman Quattlebaum | QB Training</h1>
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#programs">Programs</a>
+                <a href="#coaching">Coaching</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Coleman Quattlebaum, the owner of QB Training. I have been training and studying nursing for 8 years. My passion for fitness and health drives me to help others achieve their goals through personalized coaching and training programs.</p>
+        </div>
+    </section>
+    
+    <section id="programs">
+        <div class="container">
+            <h2>Programs</h2>
+            <ul class="program-list">
+                <li>Bodybuilding Coaching</li>
+                <li>Weight Loss Coaching</li>
+                <li>Powerlifting Coaching</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="coaching">
+        <div class="container">
+            <h2>Coaching</h2>
+            <p>If you are interested in personalized coaching, please fill out the application form below:</p>
+            <div class="application-form">
+                <form action="submit_application.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="goals">Your Fitness Goals:</label>
+                    <textarea id="goals" name="goals" rows="4" required></textarea>
+                    
+                    <label for="program">Preferred Coaching Program:</label>
+                    <select id="program" name="program" required>
+                        <option value="bodybuilding">Bodybuilding</option>
+                        <option value="weight_loss">Weight Loss</option>
+                        <option value="powerlifting">Powerlifting</option>
+                    </select>
+                    
+                    <button type="submit">Apply Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Coleman Quattlebaum | QB Training. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
